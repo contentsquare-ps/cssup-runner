@@ -3,7 +3,7 @@ Cssup management
 
 
 ## Install
-`npm i -g aaaaaaaaaaaaaa`
+`npm i -g cssup-runner`
 
 ## Usage
 `cssup-runner`

@@ -33,7 +33,6 @@ console.clear();
                 infoLog(`Checking for updates (current version: ${currentVersion})`);
                 try {
                     let remoteVersion = await getRemoteVersion();
-                    console.log('aaa', remoteVersion);
                     if (remoteVersion !== currentVersion) {
                         warnLog(`New version found! (${remoteVersion})`);
                         qA = new QandA();
