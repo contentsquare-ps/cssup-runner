@@ -7,8 +7,11 @@ export class QandA {
 
     ask(question) {
         return new Promise((resolve) => {
-            this.rl.question(question, resolve);
-            this.rl.close();
+            this.rl.question(question, answer=>{                
+                resolve(answer);
+                this.rl.close();
+            });
+            
         });
     }
 
