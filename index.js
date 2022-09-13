@@ -42,11 +42,11 @@ console.clear();
                             await rm(cssupFolder, { recursive: true, force: true });
                             await getPackageAndUnzip();
                         }
-                        infoLog('Running!')
-                        await runCSSup()
                     }
+                    infoLog('Running!')
+                    await runCSSup()
                 }
-                catch (err){
+                catch (err) {
                     console.log(err)
                     errorLog(`ERROR: Couldn't fetch remote version`);
                     infoLog('Running!')
