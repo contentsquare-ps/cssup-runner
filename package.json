@@ -1,0 +1,18 @@
+{
+  "name": "cssup-runner",
+  "version": "0.0.1",
+  "description": "Runs script if exists and goes up the folder tree until it finds it.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Pavel Gershanik",
+  "license": "MIT",
+  "bin": {
+    "cssup-run": "./index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}
