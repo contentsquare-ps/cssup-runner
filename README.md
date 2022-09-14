@@ -3,7 +3,9 @@ Cssup management
 
 
 ## Install
-`npm i -g cssup-runner`
+`npm i -g https://github.com/contentsquare-ps/cssup-runner.git`
+If you get a permission error try with sudo:
+`sudo npm i -g https://github.com/contentsquare-ps/cssup-runner.git`
 
 ## Usage
 `cssup-runner`
