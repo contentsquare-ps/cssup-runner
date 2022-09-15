@@ -8,9 +8,7 @@
   },
   "author": "Pavel Gershanik",
   "license": "MIT",
-  "bin": {
-    "cssup-run": "./index.js"
-  },
+  "bin": "./index.js",
   "type": "module",
   "dependencies": {
     "chalk": "^5.0.1"

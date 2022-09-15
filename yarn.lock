@@ -18,6 +18,6 @@ __metadata:
   dependencies:
     chalk: ^5.0.1
   bin:
-    cssup-run: ./index.js
+    cssup-runner: ./index.js
   languageName: unknown
   linkType: soft
