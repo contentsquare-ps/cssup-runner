@@ -10,6 +10,7 @@ import { QandA } from './utils/QanA.js';
 import { errorLog, infoLog, okLog, warnLog, codeLog } from './utils/log.js';
 import { checkVersion } from './utils/version.js';
 import { runCSSup } from './utils/run.js';
+import { getCredentials, writeCredentials } from './utils/getCred.js';
 
 console.clear();
 ; (async () => {
@@ -39,8 +40,12 @@ console.clear();
                         let proceed = await qA.ask('Update now? (y/n) ');
                         if (proceed && proceed.toLowerCase() === 'y') {
                             infoLog('Removing cssup folder');
+                            const credentials = getCredentials();
                             await rm(cssupFolder, { recursive: true, force: true });
                             await getPackageAndUnzip();
+                            if(credentials){
+                                writeCredentials(credentials);
+                            }
                         }
                     }
                     infoLog('Running!')
