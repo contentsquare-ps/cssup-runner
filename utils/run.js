@@ -9,7 +9,8 @@ const promiseExec = promisify(exec);
 export async function runCSSup() {
     infoLog('Starting Server');
     try {
-        await promiseExec(`kill -9 $(ps aux | grep '\snode\s' | awk '{print $2}')`);
+        infoLog('Killing any open Processes on port 3000');
+        await promiseExec(`lsof -i :3000 -t | xargs kill`);
     } catch { }
     execFile(`node`, [`${serverJS}`], (error, stdout, stderr) => {
         if (error) {
