@@ -8,7 +8,7 @@ If you get a permission error try with sudo:
 `sudo npm i -g https://github.com/contentsquare-ps/cssup-runner.git`
 
 ## Usage
-`cssup-runner`
+`cssup-runner`  
 `cssup-runner run`   
 Check if cssup exists
 * yes - check version
